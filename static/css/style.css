@@ -8,3 +8,47 @@ body,
 html {
   height: 100%;
 }
+
+/* Legend container */
+
+#legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1000;
+  max-width: 200px;
+}
+
+/* legend title */
+#legend h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+/* individual legend items */
+.legend-item {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* colored squares in the legend */
+.legend-square {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.legend i {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  opacity: 0.7;
+}

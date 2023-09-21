@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet Step-1</title>
+  <title>Earthquake Map</title>
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -20,6 +20,26 @@
 
   <!-- The div that holds our map -->
   <div id="map"></div>
+ 
+  <!-- Legend -->
+  <div id="legend">
+    <h4>Depth of Earthquake Legend</h4>
+    <div class="legend-item">
+      <i class="legend-square" style="background: green;"></i> 0 - 10 km
+    </div>
+    <div class="legend-item">
+      <i class="legend-square" style="background: yellow;"></i> 10 - 30 km
+    </div>
+    <div class="legend-item">
+      <i class="legend-square" style="background: orange;"></i> 30 - 50 km
+    </div>
+    <div class="legend-item">
+      <i class="legend-square" style="background: red;"></i> 50+ km
+    </div>
+  </div>
+
+
+
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
